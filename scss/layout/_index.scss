@@ -1,0 +1,29 @@
+.title {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.header-text {
+  display: flex;
+  justify-content: center;
+  padding: 0 15%;
+}
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+  button {
+    @include cta-button;
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+    &:hover {
+      @include button-hover;
+      -webkit-transition: .2s ease-in-out;
+      -moz-transition: .2s ease-in-out;
+      -o-transition: .2s ease-in-out;
+      transition: .2s ease-in-out;
+    }
+  }
+}
