@@ -4,7 +4,7 @@
   text-transform: uppercase;
   font-size: 16px;
   border: solid 3px $yellow;
-  padding: 10px 30px;
+  padding: 5px 30px;
   a {
     color: $light;
     text-decoration: none;
@@ -16,8 +16,27 @@
   font-family: $source-bold;
   font-size: 16px;
   border: solid 3px $yellow;
-  padding: 10px 30px;
+  padding: 5px 30px;
   a {
     color: $yellow;
+  }
+}
+
+@mixin donate-container-index {
+  padding: 20px;
+  background-color: $light;
+  box-shadow: 0 0 35px 0 rgba(0,0,0, 0.7);
+  h3 {
+    font-family: $source-reg;
+    font-size: 20px;
+    color: $dark;
+  }
+  p {
+    font-family: $source-light;
+    font-size: 16px;
+    color: $dark;
+  }
+  .button-container.pledge {
+    padding-right: 0;
   }
 }
