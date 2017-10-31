@@ -1,6 +1,7 @@
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   .logo {
     width: 65px;
     padding: 10px 0 0 5px;
@@ -13,6 +14,23 @@ header {
       display: none;
       @media #{$breakpoint-large} {
         display: flex;
+        ul {
+          display: flex;
+          li {
+            list-style: none;
+          }
+          .nav-item {
+            margin: 0 20px;
+          }
+        }
+        .home-selection {
+          .home-selection-highlight {
+            display: flex;
+            height: 3px;
+            position: relative;
+            background-color: $blue;
+          }
+        }
       }
     }
     .nav-mobile {
@@ -20,7 +38,6 @@ header {
     width: 100%;
     right: 0;
     top: 0;
-    padding: 15px 20px 0 0;
     @media #{$breakpoint-large} {
       display: none;
     }
@@ -31,6 +48,7 @@ header {
     .mobile-nav-container {
       display: flex;
       justify-content: flex-end;
+      padding: 15px 20px 0 0;
       #nav-icon {
         width: 40px;
         height: 45px;
@@ -120,39 +138,36 @@ header {
       -o-transition: height, 0s linear;
       transition: height, 0s linear;
       &.open {
-        height: 150px; // adjust height of mobile nav menu when open
+        height: 230px; // adjust height of mobile nav menu when open
         margin-bottom: 15px;
         -webkit-transition:height, 0.25s linear;
         -moz-transition: height, 0.25s linear;
         -ms-transition: height, 0.25s linear;
         -o-transition: height, 0.25s linear;
         transition: height, 0.25s linear;
-        @media #{$breakpoint-medium} {
-          height: 112px;
-        }
       }
       .mobile-nav-text {
-        hr {
-          width: 70%;
-          border-color: grey;
-        }
         ul {
           list-style: none;
           display: flex;
           align-items: center;
           flex-direction: column;
-          padding: 7px 0 0 0;
           justify-content: space-around;
           li {
-            padding: 0;
+            padding: 7px 0;
             margin: 0;
+            a {
+              font-size: 20px;
+            }
           }
           .home-selection {
             .home-selection-highlight {
               &.open {
                 display: flex;
-                height: 5px;
-                background-color: gold;
+                position: relative;
+                bottom: 6px;
+                height: 3px;
+                background-color: $blue;
               }
             }
           }
