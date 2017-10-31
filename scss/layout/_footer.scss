@@ -1,0 +1,9 @@
+footer {
+  .by-connor {
+    display: flex;
+    justify-content: center;
+    a {
+      border-bottom: 1px solid $blue;
+    }
+  }
+}

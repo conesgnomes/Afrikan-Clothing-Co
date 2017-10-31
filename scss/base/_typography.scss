@@ -9,6 +9,18 @@ nav {
     }
   }
 }
+footer {
+  p {
+    font-family: $source-light;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $dark;
+    a {
+      text-decoration: none;
+      color: $dark;
+    }
+  }
+}
 .title {
   h1 {
     font-family: $playfair-bold;
