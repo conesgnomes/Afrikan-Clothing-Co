@@ -12,8 +12,15 @@ h1 {
 
 h2 {
   font-family: $source-light;
+  font-weight: 400;
   font-size: 20px;
   color: $dark;
+  @media #{$breakpoint-medium} {
+    font-size: 24px;
+  }
+  @media #{$breakpoint-large} {
+    font-size: 26px;
+  }
 }
 
 p {

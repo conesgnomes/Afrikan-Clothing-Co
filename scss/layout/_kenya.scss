@@ -1,0 +1,30 @@
+.title-pages {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.donate-container-pages {
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-end;
+  .donate-wrapper {
+    @include donate-container-pages;
+    .button-container {
+      button {
+        @include pledge-button-pages;
+        -webkit-transition: .2s ease-in-out;
+        -moz-transition: .2s ease-in-out;
+        -o-transition: .2s ease-in-out;
+        transition: .2s ease-in-out;
+        &:hover {
+          @include pledge-button-hover-pages;
+          -webkit-transition: .2s ease-in-out;
+          -moz-transition: .2s ease-in-out;
+          -o-transition: .2s ease-in-out;
+          transition: .2s ease-in-out;
+        }
+      }
+    }
+  }
+}

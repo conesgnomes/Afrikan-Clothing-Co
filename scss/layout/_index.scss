@@ -71,9 +71,8 @@
       }
     }
   }
-  .donate-container-landing {
+  .donate-container-index {
     @include donate-container-index;
-    width: 240px;
     margin: 0 auto;
     position: relative;
     bottom: 20px;

@@ -10,7 +10,6 @@
     text-decoration: none;
   }
 }
-
 @mixin button-hover {
   background-color: $light;
   font-family: $source-bold;
@@ -21,9 +20,31 @@
     color: $yellow;
   }
 }
-
+@mixin pledge-button-pages {
+  background-color: $light;
+  font-family: $source-bold;
+  text-transform: uppercase;
+  font-size: 16px;
+  border: solid 3px $light;
+  padding: 5px 30px;
+  a {
+    color: $yellow;
+    text-decoration: none;
+  }
+}
+@mixin pledge-button-hover-pages {
+  background-color: $yellow;
+  font-family: $source-bold;
+  font-size: 16px;
+  border: solid 3px $light;
+  padding: 5px 30px;
+  a {
+    color: $light;
+  }
+}
 @mixin donate-container-index {
   padding: 20px;
+  width: 240px;
   background-color: $light;
   box-shadow: 0 0 35px 0 rgba(0,0,0, 0.7);
   h3 {
@@ -35,6 +56,24 @@
     font-family: $source-light;
     font-size: 16px;
     color: $dark;
+  }
+  .button-container.pledge-index {
+    padding-right: 0;
+  }
+}
+@mixin donate-container-pages {
+  padding: 20px;
+  width: 240px;
+  background-color: $yellow;
+  h3 {
+    font-family: $source-reg;
+    font-size: 20px;
+    color: $light;
+  }
+  p {
+    font-family: $source-light;
+    font-size: 16px;
+    color: $light;
   }
   .button-container.pledge {
     padding-right: 0;
