@@ -23,8 +23,19 @@ header {
             margin: 0 20px;
           }
         }
+        .ul-margin {
+          margin-right: 20px;
+        }
         .home-selection {
           .home-selection-highlight {
+            display: flex;
+            height: 3px;
+            position: relative;
+            background-color: $blue;
+          }
+        }
+        .kenya-selection {
+          .kenya-selection-highlight {
             display: flex;
             height: 3px;
             position: relative;
@@ -43,7 +54,7 @@ header {
     }
     &.open {
       box-shadow: 0 2px 15px 2px $dark;
-      background-color: rgba(249, 250, 250, 0.8); // $light but with opacity of 0.8
+      background-color: rgba(249, 250, 250, 0.9); // $light but with opacity of 0.8
     }
     .mobile-nav-container {
       display: flex;
@@ -138,7 +149,7 @@ header {
       -o-transition: height, 0s linear;
       transition: height, 0s linear;
       &.open {
-        height: 230px; // adjust height of mobile nav menu when open
+        height: 200px; // adjust height of mobile nav menu when open
         margin-bottom: 15px;
         -webkit-transition:height, 0.25s linear;
         -moz-transition: height, 0.25s linear;
@@ -162,6 +173,17 @@ header {
           }
           .home-selection {
             .home-selection-highlight {
+              &.open {
+                display: flex;
+                position: relative;
+                bottom: 6px;
+                height: 3px;
+                background-color: $blue;
+              }
+            }
+          }
+          .kenya-selection {
+            .kenya-selection-highlight {
               &.open {
                 display: flex;
                 position: relative;

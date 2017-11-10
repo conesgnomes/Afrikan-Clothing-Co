@@ -9,10 +9,11 @@ $(function() {
     $('.mobile-nav-content').toggleClass('open');
     $('.mobile-nav-text').toggleClass('open');
     $('.nav-span').toggleClass('open');
-    $('.projects-selection-highlight').toggleClass('open');
     $('.home-selection-highlight').toggleClass('open');
-    $('.bio-selection-highlight').toggleClass('open');
-    $('.contact-selection-highlight').toggleClass('open');
+    $('.about-selection-highlight').toggleClass('open');
+    $('.products-selection-highlight').toggleClass('open');
+    $('.kenya-selection-highlight').toggleClass('open');
+    $('.blog-selection-highlight').toggleClass('open');
 	});
 
 });
