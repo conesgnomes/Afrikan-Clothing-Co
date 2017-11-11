@@ -1,44 +1,82 @@
-.title-pages {
+.top-section-kenya {
   margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.donate-container-pages {
-  margin-top: 50px;
-  display: flex;
-  justify-content: flex-end;
-  .donate-wrapper {
-    @include donate-container-pages;
-    .button-container {
-      button {
-        @include pledge-button-pages;
-        -webkit-transition: .2s ease-in-out;
-        -moz-transition: .2s ease-in-out;
-        -o-transition: .2s ease-in-out;
-        transition: .2s ease-in-out;
-        &:hover {
-          @include pledge-button-hover-pages;
+  .title-pages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media #{$breakpoint-medium} {
+      display: block;
+      margin-left: 30px;
+      h3 {
+        padding-left: 100px;
+      }
+    }
+  }
+  @media #{$breakpoint-medium} {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .donate-container-pages {
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-end;
+    @media #{$breakpoint-medium} {
+      margin-top: 0;
+    }
+    .donate-wrapper {
+      @include donate-container-pages;
+      .button-container {
+        button {
+          @include pledge-button-pages;
           -webkit-transition: .2s ease-in-out;
           -moz-transition: .2s ease-in-out;
           -o-transition: .2s ease-in-out;
           transition: .2s ease-in-out;
+          &:hover {
+            @include pledge-button-hover-pages;
+            -webkit-transition: .2s ease-in-out;
+            -moz-transition: .2s ease-in-out;
+            -o-transition: .2s ease-in-out;
+            transition: .2s ease-in-out;
+          }
         }
       }
     }
   }
 }
 .body-section-kenya {
+  h2 {
+    @media #{$breakpoint-medium} {
+      width: 50%;
+      margin-left: 70px;
+    }
+  }
   margin: 50px 20px 0 20px;
+  @media #{$breakpoint-medium} {
+    margin-top: 120px;
+  }
   .kenya-top-group {
     margin-top: 30px;
+    @media #{$breakpoint-medium} {
+      display: flex;
+    }
     .kenya-img-container-one {
       width: 60%;
       position: relative;
       margin: 0 auto 30px auto;
+      @media #{$breakpoint-medium} {
+        width: 40%;
+      }
       .kenya-map {
         width: 100%;
         position: relative;
+      }
+    }
+    .kenya-facts-group {
+      @media #{$breakpoint-medium} {
+        margin-right: 40px;
+        width: 35%;
       }
     }
   }
