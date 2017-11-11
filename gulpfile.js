@@ -92,7 +92,7 @@ gulp.task('serve', ["build"], function() {
   browserSync.init({
     server: {
       baseDir: "./",
-      index: "index.html"
+      index: "kenya.html"
     }
   });
 
