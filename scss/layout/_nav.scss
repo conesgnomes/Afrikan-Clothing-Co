@@ -34,6 +34,14 @@ header {
             background-color: $blue;
           }
         }
+        .products-selection {
+          .products-selection-highlight {
+            display: flex;
+            height: 3px;
+            position: relative;
+            background-color: $blue;
+          }
+        }
         .kenya-selection {
           .kenya-selection-highlight {
             display: flex;
@@ -173,6 +181,17 @@ header {
           }
           .home-selection {
             .home-selection-highlight {
+              &.open {
+                display: flex;
+                position: relative;
+                bottom: 6px;
+                height: 3px;
+                background-color: $blue;
+              }
+            }
+          }
+          .products-selection {
+            .products-selection-highlight {
               &.open {
                 display: flex;
                 position: relative;
