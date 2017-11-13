@@ -47,15 +47,24 @@
   width: 240px;
   background-color: $light;
   box-shadow: 0 0 35px 0 rgba(0,0,0, 0.7);
+  @media #{$breakpoint-large} {
+    width: 320px;
+  }
   h3 {
     font-family: $source-reg;
     font-size: 20px;
     color: $dark;
+    @media #{$breakpoint-large} {
+      font-size: 24px;
+    }
   }
   p {
     font-family: $source-light;
     font-size: 16px;
     color: $dark;
+    @media #{$breakpoint-large} {
+      font-size: 20px;
+    }
   }
   .button-container.pledge-index {
     padding-right: 0;
@@ -65,15 +74,24 @@
   padding: 20px;
   width: 240px;
   background-color: $yellow;
+  @media #{$breakpoint-large} {
+    width: 320px;
+  }
   h3 {
     font-family: $source-reg;
     font-size: 20px;
     color: $light;
+    @media #{$breakpoint-large} {
+      font-size: 24px;
+    }
   }
   p {
     font-family: $source-light;
     font-size: 16px;
     color: $light;
+    @media #{$breakpoint-large} {
+      font-size: 20px;
+    }
   }
   .button-container.pledge {
     padding-right: 0;

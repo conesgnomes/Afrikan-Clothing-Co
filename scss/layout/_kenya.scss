@@ -66,6 +66,7 @@
     margin-top: 30px;
     @media #{$breakpoint-medium} {
       display: flex;
+      align-items: flex-start;
     }
     .kenya-img-container-one {
       width: 60%;
@@ -74,15 +75,20 @@
       @media #{$breakpoint-medium} {
         width: 40%;
       }
+      @media #{$breakpoint-large} {
+        width: 30%;
+      }
       .kenya-map {
         width: 100%;
-        position: relative;
       }
     }
     .kenya-facts-group {
       @media #{$breakpoint-medium} {
         margin-right: 40px;
         width: 35%;
+      }
+      p {
+        margin-top: 0;
       }
     }
   }
@@ -107,6 +113,35 @@
         }
       }
     }
+    @media #{$breakpoint-large} {
+      .kenya-paragraph-wrapper {
+        p {
+          width: 50%;
+          &:first-child {
+            margin-left: 120px;
+          }
+          &:last-child {
+            margin-right: 120px;
+          }
+        }
+      }
+    }
+    @media #{$breakpoint-xlarge} {
+      h2 {
+        width: 30%;
+      }
+      .kenya-paragraph-wrapper {
+        p {
+          width: 50%;
+          &:first-child {
+            margin-left: 150px;
+          }
+          &:last-child {
+            margin-right: 150px;
+          }
+        }
+      }
+    }
     .kenya-img-group {
       @media #{$breakpoint-medium} {
         display: flex;
@@ -118,6 +153,12 @@
         @media #{$breakpoint-medium} {
           height: 275px;
           width: 50%;
+        }
+        @media #{$breakpoint-large} {
+          height: 375px;
+        }
+        @media #{$breakpoint-xlarge} {
+          height: 450px;
         }
         img {
           object-fit: cover;
@@ -136,6 +177,13 @@
         @media #{$breakpoint-medium} {
           margin: 0 -20px 0 40px;
           height: 275px;
+          width: 100vw;
+        }
+        @media #{$breakpoint-large} {
+          height: 375px;
+        }
+        @media #{$breakpoint-xlarge} {
+          height: 450px;
         }
          img {
           object-fit: cover;
@@ -161,11 +209,18 @@
           margin: 0 0 0 25px;
         }
       }
+      @media #{$breakpoint-xlarge} {
+        margin: 0 auto;
+        width: 70%;
+      }
     }
     .kenya-img-container-four {
       margin: 0 -20px;
       @media #{$breakpoint-medium} {
         margin: 40px 10% 0 0;
+      }
+      @media #{$breakpoint-xlarge} {
+        margin: 40px 7% 0 1%;
       }
       img {
         width: 100%;
