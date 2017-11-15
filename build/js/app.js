@@ -19,4 +19,66 @@ $(function() {
 
 });
 
+$(document).ready(function() {
+  if ($("#mumu-parallax-window").length) {
+    parallaxMumu();
+  }
+});
+
+$(window).scroll(function(e) {
+  if ($("#mumu-parallax-window").length) {
+    parallaxMumu();
+  }
+});
+
+function parallaxMumu(){
+  if( $("#mumu-parallax-window").length > 0 ) {
+    var plxBackground = $("#mumu-parallax-background");
+    var plxWindow = $("#mumu-parallax-window");
+
+    var plxWindowTopToPageTop = $(plxWindow).offset().top-250;
+    var windowTopToPageTop = $(window).scrollTop();
+    var plxWindowTopToWindowTop = plxWindowTopToPageTop - windowTopToPageTop;
+
+    var plxBackgroundTopToPageTop = $(plxBackground).offset().top-200;
+    var windowInnerHeight = window.innerHeight;
+    var plxBackgroundTopToWindowTop = plxBackgroundTopToPageTop - windowTopToPageTop;
+    var plxBackgroundTopToWindowBottom = windowInnerHeight - plxBackgroundTopToWindowTop;
+    var plxSpeed = 0.35;
+
+    plxBackground.css('top', ((plxWindowTopToWindowTop) * plxSpeed) + 'px');
+  }
+}
+
+$(document).ready(function() {
+  if ($("#jacket-parallax-window").length) {
+    parallaxJacket();
+  }
+});
+
+$(window).scroll(function(e) {
+  if ($("#jacket-parallax-window").length) {
+    parallaxJacket();
+  }
+});
+
+function parallaxJacket(){
+  if( $("#jacket-parallax-window").length > 0 ) {
+    var plxBackground = $("#jacket-parallax-background");
+    var plxWindow = $("#jacket-parallax-window");
+
+    var plxWindowTopToPageTop = $(plxWindow).offset().top-450;
+    var windowTopToPageTop = $(window).scrollTop();
+    var plxWindowTopToWindowTop = plxWindowTopToPageTop - windowTopToPageTop;
+
+    var plxBackgroundTopToPageTop = $(plxBackground).offset().top-200;
+    var windowInnerHeight = window.innerHeight;
+    var plxBackgroundTopToWindowTop = plxBackgroundTopToPageTop - windowTopToPageTop;
+    var plxBackgroundTopToWindowBottom = windowInnerHeight - plxBackgroundTopToWindowTop;
+    var plxSpeed = 0.35;
+
+    plxBackground.css('top', ((plxWindowTopToWindowTop) * plxSpeed) + 'px');
+  }
+}
+
 },{}]},{},[1]);
