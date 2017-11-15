@@ -35,7 +35,7 @@ function parallaxMumu(){
     var plxBackground = $("#mumu-parallax-background");
     var plxWindow = $("#mumu-parallax-window");
 
-    var plxWindowTopToPageTop = $(plxWindow).offset().top;
+    var plxWindowTopToPageTop = $(plxWindow).offset().top+100;
     var windowTopToPageTop = $(window).scrollTop();
     var plxWindowTopToWindowTop = plxWindowTopToPageTop - windowTopToPageTop;
 
@@ -97,7 +97,7 @@ function parallaxPants(){
     var plxBackground = $("#pants-parallax-background");
     var plxWindow = $("#pants-parallax-window");
 
-    var plxWindowTopToPageTop = $(plxWindow).offset().top;
+    var plxWindowTopToPageTop = $(plxWindow).offset().top+100;
     var windowTopToPageTop = $(window).scrollTop();
     var plxWindowTopToWindowTop = plxWindowTopToPageTop - windowTopToPageTop;
 
