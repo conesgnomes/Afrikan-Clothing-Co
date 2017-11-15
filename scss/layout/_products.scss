@@ -57,6 +57,9 @@
   & > p {
     margin: 0 auto;
     width: 70%;
+    @media #{$breakpoint-medium} {
+      width: 50%;
+    }
   }
   .products {
     .mumu-group {
@@ -67,14 +70,32 @@
         overflow: hidden;
         position: relative;
         width: 100%;
+        @media #{$breakpoint-medium} {
+          height: 350px;
+        }
+        @media #{$breakpoint-large} {
+          height: 400px;
+        }
+        @media #{$breakpoint-xlarge} {
+          height: 450px;
+        }
         .mumu-style-group {
           display: flex;
           position: relative;
           z-index: 9;
-          margin-left: 50px;
+          margin-left: 10%;
+          @media #{$breakpoint-medium} {
+            margin-left: 20%;
+          }
           .mumu-drawing {
             height: 250px;
             margin-right: 20px;
+            @media #{$breakpoint-medium} {
+              height: 300px;
+            }
+            @media #{$breakpoint-large} {
+              height: 350px;
+            }
             img {
               object-fit: cover;
               height: 100%;
@@ -89,16 +110,29 @@
           justify-content: flex-end;
           position: absolute;
           width: 100%;
-          height: 300px;
+          height: 150px;
           img {
             object-fit: cover;
+            object-position: 0 30%;
             width: 70%;
-            height: 150px;
+            height: 100%;
+            @media #{$breakpoint-medium} {
+              height: 200px;
+            }
+            @media #{$breakpoint-large} {
+              height: 250px;
+            }
+            @media #{$breakpoint-xlarge} {
+              height: 300px;
+            }
           }
         }
       }
       .mumu-text {
         padding: 0 20px;
+        @media #{$breakpoint-medium} {
+          padding: 0 35% 0 10%;
+        }
       }
     }
     .jacket-group {
@@ -111,25 +145,53 @@
         .jacket-style-group {
           display: flex;
           position: relative;
+          @media #{$breakpoint-medium} {
+            h4 {
+              margin-left: 40px;
+            }
+          }
           .floral-print {
             width: 85%;
             height: 450px;
             margin-right: 20px;
             position: relative;
+            @media #{$breakpoint-medium} {
+              width: 35%;
+              height: 550px;
+            }
+            @media #{$breakpoint-large} {
+              width: 35%;
+              height: 650px;
+            }
             img {
               object-fit: cover;
               object-position: center;
               width: 100%;
-              height: 450px;
+              height: 550px;
+              @media #{$breakpoint-medium} {
+                height: 650px;
+              }
+              @media #{$breakpoint-large} {
+                height: 750px;
+              }
             }
           }
         }
         .jacket-drawing {
           height: 250px;
           position: absolute;
-          top: 150px;
-          left: 200px;
+          top: 30%;
+          left: 35%;
           z-index: 9;
+          @media #{$breakpoint-medium} {
+            height: 300px;
+            top: 15%;
+            left: 30%;
+          }
+          @media #{$breakpoint-large} {
+            height: 350px;
+            top: 11%;
+          }
           img {
             object-fit: cover;
             height: 100%;
@@ -141,6 +203,24 @@
       }
       .jacket-text {
         padding: 0 20px;
+        @media #{$breakpoint-medium} {
+          padding: 0 0 0 45%;
+          position: relative;
+          bottom: 110px;
+          right: 30px;
+        }
+        @media #{$breakpoint-large} {
+          padding: 0 0 0 45%;
+          position: relative;
+          bottom: 175px;
+          right: 50px;
+        }
+        @media #{$breakpoint-xlarge} {
+          padding: 0 10% 0 45%;
+          position: relative;
+          bottom: 175px;
+          right: 50px;
+        }
       }
     }
     .pants-group {

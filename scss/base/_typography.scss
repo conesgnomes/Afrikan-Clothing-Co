@@ -50,6 +50,12 @@ h4 {
   font-weight: 400;
   color: $dark;
   font-size: 30px;
+  @media #{$breakpoint-medium} {
+    font-size: 34px;
+  }
+  @media #{$breakpoint-large} {
+    font-size: 38px;
+  }
 }
 
 p {
