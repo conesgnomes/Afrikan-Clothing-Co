@@ -56,6 +56,9 @@ h4 {
   @media #{$breakpoint-large} {
     font-size: 38px;
   }
+  @media #{$breakpoint-xlarge} {
+    font-size: 44px;
+  }
 }
 
 p {
