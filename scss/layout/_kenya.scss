@@ -28,9 +28,6 @@
     margin-top: 50px;
     display: flex;
     justify-content: flex-end;
-    @media #{$breakpoint-medium} {
-      margin-top: 125px;
-    }
     .donate-wrapper {
       @include donate-container-pages;
       .button-container {
