@@ -1,0 +1,228 @@
+.top-section-about {
+  margin-top: 30px;
+  .title-pages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: -1;
+    @media #{$breakpoint-medium} {
+      display: block;
+      margin-left: 30px;
+      h3 {
+        position: absolute;
+        text-align: right;
+        right: -30px;
+      }
+    }
+    @media #{$breakpoint-large} {
+      margin-left: 100px;
+    }
+  }
+  @media #{$breakpoint-medium} {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .donate-container-pages {
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-end;
+    .donate-wrapper {
+      @include donate-container-pages;
+      .button-container {
+        button {
+          @include pledge-button-pages;
+          -webkit-transition: .2s ease-in-out;
+          -moz-transition: .2s ease-in-out;
+          -o-transition: .2s ease-in-out;
+          transition: .2s ease-in-out;
+          &:hover {
+            @include pledge-button-hover-pages;
+            -webkit-transition: .2s ease-in-out;
+            -moz-transition: .2s ease-in-out;
+            -o-transition: .2s ease-in-out;
+            transition: .2s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}
+.body-section-about {
+  margin: 50px 0;
+  & > p {
+    margin: 0 auto;
+    width: 70%;
+    @media #{$breakpoint-medium} {
+      width: 50%;
+    }
+  }
+  .about-info-group {
+    margin-top: 75px;
+    @media #{$breakpoint-medium} {
+      display: flex;
+      flex-direction: column;
+    }
+    .top-icons {
+      display: flex;
+      margin: 0 auto;
+      .foundation {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .foundation-icon {
+          border: solid 5px $dark;
+          border-radius: 50%;
+          height: 120px;
+          width: 120px;
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 10px;
+          background-color: $light;
+          box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
+          img {
+            height: 100px;
+          }
+          .foundation-text-circle {
+            display: none;
+          }
+          @media #{$breakpoint-medium} {
+            transition: width .2s ease-in-out, height .2s ease-in-out, border-radius .1s ease-in-out;
+            &:hover {
+              border-radius:15px;
+              width: 350px;
+              height: 200px;
+              cursor: pointer;
+            }
+            .foundation-text-circle {
+              display: block;
+              margin-left: 20px;
+              opacity: 0;
+              position: absolute;
+              transition: opacity .05s ease-in-out;
+            }
+            &:hover .foundation-text-circle {
+              opacity: 1;
+              position: relative;
+              transition: opacity .8s ease-in-out;
+            }
+          }
+        }
+        .foundation-text {
+          margin-top: 25px;
+          padding: 0 20px;
+          @media #{$breakpoint-medium} {
+            display: none;
+          }
+        }
+      }
+      .product {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .product-icon {
+          border: solid 5px $dark;
+          border-radius: 50%;
+          height: 120px;
+          width: 120px;
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 10px;
+          background-color: $light;
+          box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
+          img {
+            width: 100px;
+          }
+          .product-text-circle {
+            display: none;
+          }
+          @media #{$breakpoint-medium} {
+            transition: width .2s ease-in-out, height .2s ease-in-out, border-radius .1s ease-in-out;
+            &:hover {
+              border-radius:15px;
+              width: 350px;
+              height: 200px;
+              cursor: pointer;
+            }
+            .product-text-circle {
+              display: block;
+              margin-left: 20px;
+              opacity: 0;
+              position: absolute;
+              transition: opacity .05s ease-in-out;
+            }
+            &:hover .product-text-circle {
+              opacity: 1;
+              position: relative;
+              transition: opacity .8s ease-in-out;
+            }
+          }
+        }
+        .product-text {
+          margin-top: 25px;
+          padding: 0 20px;
+          @media #{$breakpoint-medium} {
+            display: none;
+          }
+        }
+      }
+    }
+    .customers {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      .customers-icon {
+        border: solid 5px $dark;
+        border-radius: 50%;
+        height: 120px;
+        width: 120px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        background-color: $light;
+        box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
+        img {
+          width: 100px;
+        }
+        .customers-text-circle {
+          display: none;
+        }
+        @media #{$breakpoint-medium} {
+          transition: width .2s ease-in-out, height .2s ease-in-out, border-radius .1s ease-in-out;
+          &:hover {
+            border-radius:15px;
+            width: 350px;
+            height: 230px;
+            cursor: pointer;
+          }
+          .customers-text-circle {
+            display: block;
+            margin-left: 20px;
+            opacity: 0;
+            position: absolute;
+            transition: opacity .05s ease-in-out;
+          }
+          &:hover .customers-text-circle {
+            opacity: 1;
+            position: relative;
+            transition: opacity .8s ease-in-out;
+          }
+        }
+      }
+      .customers-text {
+        margin-top: 25px;
+        padding: 0 20px;
+        @media #{$breakpoint-medium} {
+          display: none;
+        }
+      }
+    }
+  }
+}

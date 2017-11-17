@@ -2,6 +2,7 @@ h1 {
   font-family: $playfair-bold;
   font-size: 32px;
   color: $dark;
+  margin: 0;
   @media #{$breakpoint-medium} {
     font-size: 36px;
   }
@@ -18,6 +19,7 @@ h2 {
   font-size: 24px;
   color: $dark;
   font-weight: 400;
+  margin: 0;
   @media #{$breakpoint-medium} {
     font-size: 28px;
   }
@@ -34,6 +36,7 @@ h3 {
   font-weight: 400;
   font-size: 20px;
   color: $dark;
+  margin: 0;
   @media #{$breakpoint-medium} {
     font-size: 20px;
   }
@@ -50,6 +53,7 @@ h4 {
   font-weight: 400;
   color: $dark;
   font-size: 30px;
+  margin: 0;
   @media #{$breakpoint-medium} {
     font-size: 34px;
   }
@@ -64,6 +68,7 @@ h4 {
 p {
   font-family: $source-light;
   font-size: 16px;
+  margin: 0;
   @media #{$breakpoint-large} {
     font-size: 20px;
   }
