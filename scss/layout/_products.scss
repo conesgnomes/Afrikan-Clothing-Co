@@ -51,11 +51,20 @@
 }
 .body-section-products {
   margin: 50px 0;
-  & > p {
-    margin: 0 auto;
-    width: 70%;
+  .products-header-text {
+    margin: 0 20px;
     @media #{$breakpoint-medium} {
-      width: 50%;
+      position: absolute;
+      width: 45%;
+      bottom: 300px;
+      margin: 0 0 0 30px;
+    }
+    @media #{$breakpoint-large} {
+      margin-left: 50px;
+    }
+    @media #{$breakpoint-xlarge} {
+      bottom: 325px;
+      margin-left: 150px;
     }
   }
   .products {
