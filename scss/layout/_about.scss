@@ -51,39 +51,64 @@
 }
 .body-section-about {
   margin: 50px 0;
-  & > p {
-    margin: 0 auto;
-    width: 70%;
-    @media #{$breakpoint-medium} {
-      width: 50%;
-    }
-  }
+  // .about-section-header-text {
+  //   display: flex;
+  //   justify-content: center;
+  //   p {
+  //     line-height: 150%;
+  //     width: 300px;
+  //     @media #{$breakpoint-medium} {
+  //       width: 550px;
+  //     }
+  //     @media #{$breakpoint-large} {
+  //       width: 650px;
+  //     }
+  //     @media #{$breakpoint-large} {
+  //       width: 850px;
+  //     }
+  //   }
+  // }
+  // & > p {
+  //   margin: 0 auto;
+  //   width: 70%;
+  //   line-height: 150%;
+  //   @media #{$breakpoint-medium} {
+  //     width: 50%;
+  //   }
+  // }
   .about-info-group {
-    margin-top: 75px;
+    margin: 50px 20px 0 20px;
     @media #{$breakpoint-medium} {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      margin: 100px 60px 0 30px;
+    }
+    @media #{$breakpoint-large} {
+      margin: 100px 100px 0 70px;
+    }
+    @media #{$breakpoint-xlarge} {
+      margin: 100px 250px 0 230px;
     }
     .foundation {
       @media #{$breakpoint-medium} {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
       }
       .foundation-icon {
         display: flex;
         justify-content: center;
-        @media #{$breakpoint-medium} {
-          width: 40%;
-        }
-        img {
-          height: 100%;
-        }
       }
       .foundation-text {
-        margin: 25px 20px 0 20px;
         @media #{$breakpoint-medium} {
-          width: 40%;
+          padding-left: 20px;
+        }
+        @media #{$breakpoint-large} {
+          padding-left: 50px;
+        }
+        h2 {
+          margin-bottom: 10px;
         }
       }
     }
@@ -92,21 +117,21 @@
       @media #{$breakpoint-medium} {
         display: flex;
         justify-content: center;
+        align-items: center;
       }
       .product-icon {
         display: flex;
         justify-content: center;
-        @media #{$breakpoint-medium} {
-          width: 40%;
-        }
-        img {
-          height: 100%;
-        }
       }
       .product-text {
-        margin: 25px 20px 0 20px;
         @media #{$breakpoint-medium} {
-          width: 40%;
+          padding-left: 20px;
+        }
+        @media #{$breakpoint-large} {
+          padding-left: 50px;
+        }
+        h2 {
+          margin-bottom: 10px;
         }
       }
     }
@@ -115,21 +140,21 @@
       @media #{$breakpoint-medium} {
         display: flex;
         justify-content: center;
+        align-items: center;
       }
       .customers-icon {
         display: flex;
         justify-content: center;
-        @media #{$breakpoint-medium} {
-          width: 40%;
-        }
-        img {
-          height: 100%;
-        }
       }
       .customers-text {
-        margin: 25px 20px 0 20px;
         @media #{$breakpoint-medium} {
-          width: 40%;
+          padding-left: 20px;
+        }
+        @media #{$breakpoint-large} {
+          padding-left: 50px;
+        }
+        h2 {
+          margin-bottom: 10px;
         }
       }
     }
@@ -138,21 +163,21 @@
       @media #{$breakpoint-medium} {
         display: flex;
         justify-content: center;
+        align-items: center;
       }
       .triangle-icon {
         display: flex;
         justify-content: center;
-        @media #{$breakpoint-medium} {
-          width: 40%;
-        }
-        img {
-          height: 100%;
-        }
       }
       .triangle-text {
-        margin: 25px 20px 0 20px;
         @media #{$breakpoint-medium} {
-          width: 40%;
+          padding-left: 20px;
+        }
+        @media #{$breakpoint-large} {
+          padding-left: 50px;
+        }
+        h2 {
+          margin-bottom: 10px;
         }
       }
     }

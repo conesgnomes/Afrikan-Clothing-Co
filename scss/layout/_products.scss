@@ -156,7 +156,7 @@
             }
           }
           .floral-print {
-            width: 85%;
+            width: 65%;
             height: 450px;
             margin-right: 20px;
             position: relative;
@@ -224,6 +224,10 @@
         @media #{$breakpoint-large} {
           padding: 0 10% 0 40%;
           bottom: 30px;
+        }
+        @media #{$breakpoint-large} {
+          padding: 0 10% 0 40%;
+          bottom: 70px;
         }
       }
     }
@@ -307,7 +311,7 @@
           padding: 0 35% 0 10%;
         }
         @media #{$breakpoint-xlarge} {
-          padding: 0 25% 0 20%;
+          padding: 0 15% 0 35%;
         }
       }
     }
@@ -323,7 +327,7 @@
           justify-content: flex-end;
           position: relative;
           h4 {
-            margin-left: 20px;
+            margin-right: 20px;
             @media #{$breakpoint-medium} {
               margin-right: 60px;
             }
@@ -332,7 +336,7 @@
             }
           }
           .pineapple-print {
-            width: 65%;
+            width: 60%;
             height: 450px;
             position: relative;
             @media #{$breakpoint-medium} {
@@ -398,6 +402,9 @@
         }
         @media #{$breakpoint-large} {
           bottom: 175px;
+        }
+        @media #{$breakpoint-xlarge} {
+          bottom: 110px;
         }
       }
     }

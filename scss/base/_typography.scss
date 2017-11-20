@@ -4,7 +4,7 @@ h1 {
   color: $dark;
   margin: 0;
   @media #{$breakpoint-medium} {
-    font-size: 36px;
+    font-size: 34px;
   }
   @media #{$breakpoint-large} {
     font-size: 40px;
@@ -22,12 +22,6 @@ h2 {
   margin: 0;
   @media #{$breakpoint-medium} {
     font-size: 28px;
-  }
-  @media #{$breakpoint-large} {
-    font-size: 30px;
-  }
-  @media #{$breakpoint-xlarge} {
-    font-size: 36px;
   }
 }
 
@@ -69,8 +63,9 @@ p {
   font-family: $source-light;
   font-size: 16px;
   margin: 0;
+  line-height: 150%;
   @media #{$breakpoint-large} {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 

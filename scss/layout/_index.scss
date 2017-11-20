@@ -4,29 +4,25 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  @media #{$breakpoint-medium} {
-    // display: block;
-    margin-left: 30px;
-    h3 {
-      // padding-left: 100px;
-    }
-  }
-  @media #{$breakpoint-large} {
-    margin-left: 80px;
-  }
 }
 .header-text {
   display: flex;
   justify-content: center;
-  padding: 0 15%;
-  @media #{$breakpoint-medium} {
-    padding: 0 30%;
-  }
-  @media #{$breakpoint-large} {
-    padding: 0 35%;
-  }
-  @media #{$breakpoint-xlarge} {
-    padding: 0 37%;
+  padding: 40px 0 30px 0;
+  p {
+    line-height: 150%;
+    @media #{$breakpoint-small} {
+      width: 300px;
+    }
+    @media #{$breakpoint-medium} {
+      width: 450px;
+    }
+    @media #{$breakpoint-large} {
+      width: 550px;
+    }
+    @media #{$breakpoint-xlarge} {
+      width: 650px;
+    }
   }
 }
 .button-container {
@@ -34,13 +30,13 @@
   justify-content: flex-end;
   padding-right: 10%;
   @media #{$breakpoint-medium} {
-    padding-right: 30%;
+    padding-right: 15%;
   }
   @media #{$breakpoint-large} {
-    padding-right: 35%;
+    padding-right: 20%;
   }
   @media #{$breakpoint-xlarge} {
-    padding-right: 40%;
+    padding-right: 27%;
   }
   button {
     @include cta-button;
@@ -62,10 +58,13 @@
   .hero-img {
     margin-top: 60px;
     @media #{$breakpoint-medium} {
-      margin-top: 90px;
+      margin-top: 180px;
     }
     @media #{$breakpoint-large} {
-      margin-top: 100px;
+      margin-top: 250px;
+    }
+    @media #{$breakpoint-xlarge} {
+      margin-top: 230px;
     }
     img {
       width: 100%;
@@ -91,15 +90,13 @@
     @media #{$breakpoint-medium} {
       position: absolute;
       margin: 0 5%;
-      bottom: 70%;
+      bottom: 60%;
     }
     @media #{$breakpoint-large} {
       margin: 0 10%;
-      bottom: 80%;
+      bottom: 75%;
     }
-    @media #{$breakpoint-xlarge} {
-      bottom: 83%;
-    }
+
   }
 }
 .instagram {

@@ -95,11 +95,14 @@
   }
   .kenya-middle-group {
     margin: 80px 0;
+    h2 {
+      margin: 0 auto 20px auto;
+    }
+    p {
+      margin-bottom: 20px;
+    }
     @media #{$breakpoint-medium} {
       margin-bottom: 175px;
-      h2 {
-        margin: 0 auto;
-      }
       .kenya-paragraph-wrapper {
         display: flex;
         margin: 20px 0 40px 0;
@@ -199,6 +202,12 @@
   .kenya-bottom-group {
     margin-bottom: 50px;
     .kenya-bottom-text-group {
+      h2 {
+        margin-bottom: 20px;
+      }
+      p {
+        margin-bottom: 20px;
+      }
       @media #{$breakpoint-medium} {
         display: flex;
         h2 {
