@@ -56,14 +56,14 @@
     @media #{$breakpoint-medium} {
       position: absolute;
       width: 45%;
-      bottom: 300px;
+      top: 200px;
       margin: 0 0 0 30px;
     }
     @media #{$breakpoint-large} {
       margin-left: 50px;
     }
     @media #{$breakpoint-xlarge} {
-      bottom: 325px;
+      top: 250px;
       margin-left: 150px;
     }
   }

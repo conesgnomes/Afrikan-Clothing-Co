@@ -56,14 +56,14 @@
     @media #{$breakpoint-medium} {
       position: absolute;
       width: 45%;
-      bottom: 300px;
+      top: 200px;
       margin: 0 0 0 30px;
     }
     @media #{$breakpoint-large} {
       margin-left: 50px;
     }
     @media #{$breakpoint-xlarge} {
-      bottom: 325px;
+      top: 250px;
       margin-left: 150px;
     }
   }
@@ -90,6 +90,9 @@
           position: relative;
           z-index: 9;
           margin-left: 10%;
+          @media only screen and (min-width: 480px) {
+            margin-left: 17%;
+          }
           @media #{$breakpoint-medium} {
             margin-left: 20%;
           }
@@ -202,6 +205,9 @@
           top: 30%;
           left: 35%;
           z-index: 9;
+          @media only screen and (min-width: 545px) {
+            left: 50%;
+          }
           @media #{$breakpoint-medium} {
             height: 300px;
             top: 15%;
@@ -263,11 +269,17 @@
           position: relative;
           z-index: 9;
           margin-right: 10%;
+          @media only screen and (min-width: 445px) {
+            margin-right: 19%;
+          }
           @media #{$breakpoint-medium} {
-            margin-right: 20%;
+            margin-right: 21%;
           }
           @media #{$breakpoint-xlarge} {
             margin-right: 30%;
+          }
+          @media only screen and (min-width: 1545px) {
+            margin-right: 32%;
           }
           .pants-drawing {
             height: 250px;
@@ -381,6 +393,9 @@
           top: 27%;
           left: 27%;
           z-index: 9;
+          @media only screen and (min-width: 545px) {
+            left: 30%;
+          }
           @media #{$breakpoint-medium} {
             height: 300px;
             top: 15%;
