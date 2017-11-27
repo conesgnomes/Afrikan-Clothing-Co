@@ -124,6 +124,13 @@
           position: absolute;
           width: 100%;
           height: 150px;
+          bottom: 100px;
+          @media #{$breakpoint-medium} {
+            bottom: 125px;
+          }
+          @media #{$breakpoint-large} {
+            bottom: 0;
+          }
           img {
             object-fit: cover;
             object-position: 0 30%;
@@ -309,6 +316,10 @@
           position: absolute;
           width: 100%;
           height: 300px;
+          top: 80px;
+          @media #{$breakpoint-large} {
+            bottom: 0;
+          }
           img {
             object-fit: cover;
             width: 68%;
