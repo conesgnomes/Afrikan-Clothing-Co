@@ -166,7 +166,7 @@ header {
         -o-transition: height, 0s linear;
         transition: height, 0s linear;
         &.open {
-          height: 160px; // adjust height of mobile nav menu when open
+          height: 200px; // adjust height of mobile nav menu when open
           margin-bottom: 15px;
           -webkit-transition:height, 0.25s linear;
           -moz-transition: height, 0.25s linear;
