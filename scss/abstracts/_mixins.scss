@@ -51,8 +51,51 @@
   width: 260px;
   background-color: $light;
   box-shadow: 0 0 35px 0 rgba(0,0,0, 0.7);
-  @media #{$breakpoint-small} {
+  @media #{$breakpoint-medium} {
     width: 320px;
+  }
+  // Header for donate container
+  label {
+    font-family: $source-reg;
+    font-size: 20px !important;
+    color: $dark;
+    @media #{$breakpoint-large} {
+      font-size: 24px !important;
+    }
+  }
+  // Input box for subscribe container
+  #mce-EMAIL {
+    border-radius: 0 !important;
+    margin: 20px 0 25px;
+  }
+  // Button for subscribe container
+  .clear {
+    margin: 0 !important;
+    #mc_embed_signup input.button {
+      width: 40%;
+      padding-bottom: 30px;
+    }
+    input {
+      border-radius: 0 !important;
+      background-color: $yellow !important;
+      font-family: $source-bold !important;
+      text-transform: uppercase !important;
+      font-size: 16px !important;
+      border: solid 3px $yellow !important;
+      color: $light !important;
+      text-decoration: none !important;
+      &:hover {
+        background-color: $light !important;
+        font-family: $source-bold;
+        font-size: 16px !important;
+        border: solid 3px $yellow !important;
+        border-radius: 0;
+        padding: 5px 30px;
+        color: $yellow !important;
+        a {
+        }
+      }
+    }
   }
   h3 {
     font-family: $source-reg;
