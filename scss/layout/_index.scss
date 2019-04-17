@@ -1,100 +1,133 @@
-.title-index {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+// .title-index {
+//   margin-top: 30px;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+// }
+.center-copy {
+
 }
-.header-text {
-  display: flex;
-  justify-content: center;
-  padding: 40px 0 30px 0;
-  p {
-    line-height: 150%;
-    @media #{$breakpoint-small} {
-      width: 300px;
-    }
-    @media #{$breakpoint-medium} {
-      width: 450px;
-    }
-    @media #{$breakpoint-large} {
-      width: 550px;
-    }
-    @media #{$breakpoint-xlarge} {
-      width: 650px;
-    }
-  }
-}
-.button-container {
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 10%;
-  @media #{$breakpoint-medium} {
-    padding-right: 15%;
-  }
-  @media #{$breakpoint-large} {
-    padding-right: 20%;
-  }
-  @media #{$breakpoint-xlarge} {
-    padding-right: 27%;
-  }
-  button {
-    @include cta-button;
-    -webkit-transition: .2s ease-in-out;
-    -moz-transition: .2s ease-in-out;
-    -o-transition: .2s ease-in-out;
-    transition: .2s ease-in-out;
-    &:hover {
-      @include button-hover;
-      -webkit-transition: .2s ease-in-out;
-      -moz-transition: .2s ease-in-out;
-      -o-transition: .2s ease-in-out;
-      transition: .2s ease-in-out;
-    }
-  }
-}
-.hero {
-  position: relative;
-  .hero-img {
-    margin-top: 60px;
-    @media #{$breakpoint-medium} {
-      margin-top: 180px;
-    }
-    img {
-      width: 100%;
-      height: 340px;
-      object-fit: cover;
-      object-position: bottom;
+.hero-content {
+  .center-copy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .header-content {
+      position: absolute;
+      z-index: 100;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      // left: 50px;
+      top: 250px;
+      @media #{$breakpoint-xsmall} {
+        top: 220px;        
+      }
       @media #{$breakpoint-medium} {
-        height: 450px;
+        // left: 175px;
+        top: 230px;
       }
       @media #{$breakpoint-large} {
-        height: 600px;
+        // left: 250px;
+        top: 275px;
       }
       @media #{$breakpoint-xlarge} {
-        height: 800px;
+        // left: 300px;
+        top: 375px;
+      }
+      .header-text {
+        display: flex;
+        justify-content: center;
+        padding: 40px 0 20px 0;
+        p {
+          line-height: 150%;
+          width: 300px;
+          @media #{$breakpoint-medium} {
+            width: 300px;
+          }
+          @media #{$breakpoint-large} {
+            width: 550px;
+          }
+          @media #{$breakpoint-xlarge} {
+            width: 650px;
+          }
+        }
+      }
+      .button-container {
+        display: flex;
+        justify-content: flex-end;
+        // padding-right: 10%;
+        // @media #{$breakpoint-medium} {
+        //   padding-right: 15%;
+        // }
+        // @media #{$breakpoint-large} {
+        //   padding-right: 20%;
+        // }
+        // @media #{$breakpoint-xlarge} {
+        //   padding-right: 27%;
+        // }
+        button {
+          @include cta-button;
+          -webkit-transition: .2s ease-in-out;
+          -moz-transition: .2s ease-in-out;
+          -o-transition: .2s ease-in-out;
+          transition: .2s ease-in-out;
+          &:hover {
+            @include button-hover;
+            -webkit-transition: .2s ease-in-out;
+            -moz-transition: .2s ease-in-out;
+            -o-transition: .2s ease-in-out;
+            transition: .2s ease-in-out;
+          }
+        }
       }
     }
   }
-  .donate-container-index {
-    @include donate-container-index;
-    margin: 0 auto;
+  .hero {
     position: relative;
-    bottom: 20px;
-    @media #{$breakpoint-medium} {
-      position: absolute;
-      margin: 0 5%;
-      bottom: 60%;
+    .hero-img {
+      // margin-top: 60px;
+      margin-top: 10px;
+      img {
+        width: 100%;
+        // height: 340px;
+        object-fit: cover;
+        object-position: bottom;
+        @media #{$breakpoint-medium} {
+          // height: 450px;
+        }
+        @media #{$breakpoint-large} {
+          // height: 600px;
+        }
+        @media #{$breakpoint-xlarge} {
+          // height: 800px;
+        }
+      }
     }
-    @media #{$breakpoint-large} {
-      margin: 0 10%;
-      bottom: 75%;
-    }
-
+    // .donate-container-index {
+    //   @include donate-container-index;
+    //   margin: 0 auto;
+    //   position: relative;
+    //   bottom: 20px;
+    //   @media #{$breakpoint-medium} {
+    //     position: absolute;
+    //     margin: 0 5%;
+    //     bottom: 60%;
+    //   }
+    //   @media #{$breakpoint-large} {
+    //     margin: 0 10%;
+    //     bottom: 75%;
+    //   }
+    //
+    // }
   }
 }
 .instagram {
-  margin: 40px 0 50px 0;
+  margin: 275px 0 50px 0;
+  @media #{$breakpoint-medium} {
+    margin: 40px 0 50px 0;
+  }
   p {
     margin-left: 50px;
     a {
